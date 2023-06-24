@@ -19,7 +19,7 @@ chatRouter.post('/completion',async (req,res)=>{
             body:JSON.stringify({
                 model: "gpt-3.5-turbo",
                 "messages": [{role: 'user', content: `${chatInput}`}],
-                max_tokens: 100
+                max_tokens: 300
             })
         })
         .then((res)=>res.json())
